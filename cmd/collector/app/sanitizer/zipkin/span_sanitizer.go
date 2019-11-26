@@ -30,7 +30,7 @@ const (
 var (
 	defaultDuration = int64(1)
 	// StandardSanitizers is a list of standard zipkin sanitizers.
-	StandardSanitizers = []Sanitizer{NewSpanStartTimeSanitizer(), NewSpanDurationSanitizer(), NewParentIDSanitizer(), NewErrorTagSanitizer()}
+	StandardSanitizers = []Sanitizer{NewSpanStartTimeSanitizer(), NewSpanDurationSanitizer(), NewParentIDSanitizer(), NewErrorTagSanitizer(), NewTagsPiiSanitizer()}
 )
 
 // Sanitizer interface for sanitizing spans. Any business logic that needs to be applied to normalize the contents of a
